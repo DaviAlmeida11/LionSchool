@@ -1,105 +1,300 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+.tela_1,
+.tela_2,
+.tela3 {
+    display: none;
+}
 
- header{
+
+.tela_1.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
     width: 100%;
-    height: 100px;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
+    padding: 1rem 5%;
     background-color: #3347B0;
 }
 
-.logo h1{
-    color: white;
-    font-family: "Roboto";
-    size: 24px;
-   
-
-
-}
-.logo img{
-    width: 60px;
-    height: 75px;
-    
-}
-
-.logo{
+.logo {
     display: flex;
     height: 75px;
     width: 146px;
     align-items: center;
     gap: 11px;
-    
 }
 
+.logo h1 {
+    color: white;
+    font-family: "Roboto";
+    size: 24px;
+}
 
-.sair{
-   display: flex;
-   margin-left: auto;
-   align-items: center;
-   gap: 11px;
+.logo img {
+    width: 60px;
+    height: 75px;
+}
+
+.sair {
+     display: none;
+    margin-left: auto;
+    align-items: center;
+    gap: 11px;
+    cursor: pointer;
    
 }
-.sair h1{
+
+
+.sair h1 {
     font-family: "Roboto";
     color: white;
-    
-}
-.voltar{
-    display : none
 }
 
-
-main{
-    width: 100%;
-    height: 482px;
-    background-color: antiquewhite;
-    gap: 20px;
-    align-items: center;
-    display: flex;
-}
-
-
-
-.mensagem{
-    width: 471px;
-    height: 156px;
-    display: flex;
-    
-   
-    
-}
-
-
-
-
-.tela_2{
-    display: none;
-}
-
-.tela3{
-    display: none;
-}
-
-.cursos button{
-    display: flex;
+.voltar {
+     display: none;
     margin-left: auto;
-    width: 400px;
-    height: 200px;
-    border: 1px;
-    background-color: aqua;
-    
- 
+    align-items: center;
+    gap: 11px;
+    cursor: pointer;
 }
-.cursos {
- background-color: black;
+.voltar h1{
+    font-family: "Roboto";
+    color: white;
+}
 
+main {
+    flex: 1;
+    position: relative;
 }
-.cursos{
-   gap: 23px;
+
+
+.lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
 }
+
+.mensagem {
+    font-family: "Roboto";
+    font-size: 57.38px;
+    font-weight: 400;
+}
+
+.mensagem span {
+    color: #3347B0;
+}
+
+.mulher img {
+    width: 400px;
+}
+
+.computadores {
+    width: 350px;
+}
+
+.computadores img {
+    height: 436px;
+}
+
+
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.cursos button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 600px;
+    height: 300px;
+    background-color: #3347B0;
+    color: white;
+    font-size: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.40);
+}
+
+.icone {
+    width: 96px;
+    height: 76.79px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 1.5rem 10%;
+    background-color: #3347B0;
+    color: white;   
+}
+
+.contatos span{
+     font-family: "Roboto";
+}
+
+.redes_sociais {
+    display: flex;
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.autor {
+    font-family: "Roboto";
+    size: 20px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ .tela_2.active {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    
+}
+
+
+.titulo-curso {
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Roboto";
+    color: #3347B0;
+    margin-top: 40px;
+}
+
+.container-alunos {
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    gap: 40px;
+    justify-content: center;
+    margin-top: 80px;
+}
+.card-aluno h2 {
+   font-family: "Poppins";
+     height: 54px;
+     width: 176px;
+     display: flex;
+     align-items: center;
+     color:aliceblue;
+     text-align: center;
+}
+
+.card-aluno:hover {
+    transform: scale(1.05);
+}
+  
+    
+
+.card-aluno {
+  background-color:#3347B0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 201px;
+    gap: 50px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.20);
+}
+
+.card-aluno img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: cover;
+}
+
+
+
+
+.tela3.active {
+    display: flex;
+    width: 100%;
+    height: 100%;
+   justify-content: space-around;
+   align-items: center;
+    
+}
+.aluno{
+    display: flex;
+    height: 500px ;
+    width: 500px;
+    justify-content: center;
+    background-color: aqua;
+    flex-direction: column;
+    align-items: center;
+   gap: 15px;
+}
+.aluno img {
+    height: 300px ;
+    width: 300px;
+}
+.aluno span{
+     font-family: "Poppins";
+       color:aliceblue;
+       font-size: 25px;
+       color: #3347B0;
+}
+
+.grafico{
+    display: flex;
+    gap: 80px;
+    align-items: end;
+    justify-content: center;
+    background-color: aqua;
+    height: 500px ;
+    width: 500px;
+}
+.grafico sop{
+    height: 300px;
+    width: 16px;
+    background-color: aliceblue;
+}
+.grafico ipr{
+     height: 300px;
+    width: 16px;
+    background-color: aliceblue;
+}
+
+
+

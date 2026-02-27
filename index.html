@@ -1,131 +1,139 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tela1.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="app.js" defer></script>
+
+    <title>Lion School</title>
 </head>
+
 <body>
+
     <header>
+        <div class="logo">
+            <img src="img/lion.png" alt="leao">
+            <h1>Lion School</h1>
+        </div>
 
-       <div class="logo">
-        <img src="img/lion.png" alt="leao">
-        <h1>Lion School</h1s>
-       </div>
-       
-       <div class="sair ">
-        <img src="img/portaSaida.png" alt="sair">
-        <h1>Sair</h1>
-       </div>
-    </div>
-    
-       <div class="voltar active">
-        <h1>voltar</h1>
-        <img src="" alt="voltar">
+        <div class="sair">
+            <img src="img/portaSaida.png" alt="sair">
+            <h1>Sair</h1>
+        </div>
 
+        <div class="voltar">
+            <img src="img/portaSaida.png" alt="voltar">
+            <h1>Voltar</h1>
+        </div>
     </header>
+
     <main>
 
-        <div class="tela3 active">
-            <div class="alunos"  id = aluno_escolhido>
-                <img src="" alt="aluno">
-                <h2></h2>
-                <div class="informacoes" id = informacoes_aluno>
-                    <h2>
+        <!-- TELA 3 -->
+        <div class="tela3">
+            <div class="aluno">
+                <img src="img/ads.svg" alt="aluno">
+                <span>Aluno nome</span>
+            </div>
 
-                    </h2>
+            <div class="grafico">
+                <div class="sop">
+                    <span>90</span>
+                </div>
+
+                <div class="ipr">
+                    <span>30</span>
+                </div>
+
+                <div class="bd">
+                    <span>bd</span>
+                </div>
+
+                <div class="pbe">
+                    <span>pbe</span>
+                </div>
+
+                <div class="pfe">
+                    <span>pfe</span>
                 </div>
             </div>
-            </div>
         </div>
 
-        <div class="tela_2 active">
-            <div class="status" id = status>
-                <select name="status" id="status">
-                    <option value="status"></option>
-                    <option value="Finalizado"></option>
-                    <option value="Cursando"></option>
-                </select>
-            </div>
-            <div class="quadrado1"></div>
-            <h2>Cursando</h2>
-            <h2>Finalizado</h2>
-            <div class="quadrado2"></div>
-          
-            <h1>Desenvolvimento de sistemas</h1>
+        <!-- TELA 2 -->
+        <div class="tela_2">
+            <div id="tela2"></div>
+        </div>
 
-            <div class="alunos" id = "alunos"> 
-                <div class="aluno">
-                    <img src="" alt="foto">
-                    <h2> alguma coisa</h2>
+        <!-- TELA 1 -->
+        <div class="tela_1 active">
+            <div class="lado-esquerdo">
+                <div class="mensagem">
+                    <h1>Escolha um <span>curso</span><br>para gerenciar</h1>
+                </div>
+
+                <div class="computadores">
+                    <img src="img/computadores.svg" alt="Computadores">
                 </div>
             </div>
 
+            <div class="mulher">
+                <img src="img/studant.svg" alt="mulher">
+            </div>
+
+            <div class="cursos" id="cursos"></div>
         </div>
 
-        <div class="mensagem">
-            <h1>Escolha um curso para gerenciar</h1>
-        </div>
-        <div class="computadores">
-            <img src="img/computadores.svg" alt="pcs">
-        </div>
-        <div class="cursos">
-     <div class="botao1">
-        <button>
-            <img src="" alt="">ADS
-        </button>
-    
-     </div>
-     <div class="botao2">
-        <button>
-            <img src="" alt="">redes
-        </button>
-        
-     </div>
-                
-            </button>
-        </div>
-
-            
     </main>
+
     <footer>
         <div class="contatos">
-            <div class="telefone">
-                <h1></h1>
-                <img src="" alt="telefone">
+            <div class="item">
+                <img src="img/telefone.png" alt="telefone">
+                <span>(11) 4774-4700</span>
             </div>
-            <div class="gmail">
-                <h1></h1>
-                <img src="" alt="imail">
-            </div>
-             <div class="local">
-                <h1></h1>
-                <img src="" alt="local">
-             </div>
-        </div>
-        <div class="autor">
-            <h2>Feito por Davi</h2>
-        </div>
-         <div class="redes_sociais">
-            <div class="yotube">
-                <img src="" alt="yotube">
-            </div>
-           <div class="x">
-            <img src="" alt="x">
-           </div>   
-           <div class="linkedin">
-            <img src="" alt="linkedin">
-           </div>
-           <div class="facebook">
-            <img src="" alt="facebook">
-           </div>
 
-         </div>
+            <div class="item">
+                <img src="img/email.png" alt="email">
+                <span>lionschool@gmail.com</span>
+            </div>
+
+            <div class="item">
+                <img src="img/local.png" alt="local">
+                <span>Rua tcc, 211, Centro, Jandira</span>
+            </div>
+        </div>
+
+        <div class="autor">
+            <h2>Copyright © 2022 | Davi de Almeida</h2>
+        </div>
+
+        <div class="redes_sociais">
+            <div class="item">
+                <img src="img/yotube.png" alt="youtube">
+            </div>
+
+            <div class="item">
+                <img src="img/twitter.png" alt="x">
+            </div>
+
+            <div class="item">
+                <img src="img/instagram.png" alt="instagram">
+            </div>
+
+            <div class="item">
+                <img src="img/facebook.png" alt="facebook">
+            </div>
+        </div>
     </footer>
-    
+
 </body>
 </html>
