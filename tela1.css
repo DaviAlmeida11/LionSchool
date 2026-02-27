@@ -253,6 +253,8 @@ footer {
     height: 100%;
    justify-content: space-around;
    align-items: center;
+   position: absolute;
+  
     
 }
 .aluno{
@@ -278,23 +280,66 @@ footer {
 
 .grafico{
     display: flex;
-    gap: 80px;
-    align-items: end;
+    gap: 41px;
+    align-items: flex-end;
     justify-content: center;
     background-color: aqua;
-    height: 500px ;
+    height: 387px;
+    width: 359px;
+   
+}
+.borda {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 500px;
     width: 500px;
+    background-color: #3347B0;
 }
-.grafico sop{
-    height: 300px;
+
+
+.grafico {
+    display: flex;
+    gap: 25px;
+    align-items: flex-end; 
+    justify-content: center;
+    background-color: #f0f8ff; /* Cor clara de fundo do gráfico */
+    border: 2px solid #0099ff;
+    padding: 20px;
+    height: 350px;
+}
+
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    
+}
+
+
+.barra {
     width: 16px;
-    background-color: aliceblue;
+    margin: 5px 0;
 }
-.grafico ipr{
-     height: 300px;
-    width: 16px;
-    background-color: aliceblue;
+
+
+
+
+.coluna span { 
+    font-weight: Poppins;
+     font-family: sans-serif; 
+     color: #2b44b1; 
+     font-size: 14px; 
 }
+.coluna h2 {
+     font-size: 12px;
+      font-family: sans-serif; 
+      color: #2b44b1; 
+      margin: 0; 
+    }
 
 
 
