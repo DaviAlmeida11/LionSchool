@@ -1,6 +1,4 @@
-﻿# projeto2-Leonid
 
-# Lion-School-Leonid
 # Lion School
 
 <img width="1912" height="945" alt="Captura de tela 2026-03-05 005003" src="https://github.com/user-attachments/assets/e38f3f9b-ff0d-4af5-b715-c854746e4be2" />
@@ -26,3 +24,4 @@ Permite visualizar os cursos disponíveis, listar os alunos de cada curso e most
 - Fetch API para consumo de dados
 
 ## Estrutura do Projeto
+
