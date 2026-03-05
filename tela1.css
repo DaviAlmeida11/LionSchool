@@ -1,345 +1,618 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
 }
+
+/* CONTROLE DAS TELAS */
 .tela_1,
 .tela_2,
-.tela3 {
-    display: none;
+.tela3{
+    display:none;
 }
 
+.tela_1.active{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:100px;
+    width:100%;
+    height:100%;
+}
 
-.tela_1.active {
+.tela_2.active{
+    display:flex;
+    width:100%;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+    gap:70px;
+}
+
+.tela3.active{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-
+    justify-content: space-around;
+    align-items: center;    
+    gap: 40px;               
+    padding: 90px;       
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+/* BODY */
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    font-family:"Roboto";
 }
 
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    background-color: #3347B0;
+/* HEADER */
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 5%;
+    background-color:#3347B0;
 }
 
-.logo {
-    display: flex;
-    height: 75px;
-    width: 146px;
-    align-items: center;
-    gap: 11px;
+.logo{
+    display:flex;
+    height:75px;
+    align-items:center;
+    gap:11px;
 }
 
-.logo h1 {
-    color: white;
-    font-family: "Roboto";
-    size: 24px;
+.logo h1{
+    color:white;
 }
 
-.logo img {
-    width: 60px;
-    height: 75px;
+.logo img{
+    width:60px;
+    height:75px;
 }
 
-.sair {
-     display: none;
-    margin-left: auto;
-    align-items: center;
-    gap: 11px;
-    cursor: pointer;
-   
+.sair, .voltar{
+    display:none;
+    margin-left:auto;
+    align-items:center;
+    gap:11px;
+    cursor:pointer;
 }
 
-
-.sair h1 {
-    font-family: "Roboto";
-    color: white;
+.sair h1, .voltar h1{
+    color:white;
 }
 
-.voltar {
-     display: none;
-    margin-left: auto;
-    align-items: center;
-    gap: 11px;
-    cursor: pointer;
-}
-.voltar h1{
-    font-family: "Roboto";
-    color: white;
+/* MAIN */
+main{
+    flex:1;
 }
 
-main {
-    flex: 1;
-    position: relative;
+/* TELA 1 */
+.lado-esquerdo{
+    display:flex;
+    flex-direction:column;
+    gap:200px;
 }
 
-
-.lado-esquerdo {
-    display: flex;
-    flex-direction: column;
-    gap: 200px;
+.mensagem{
+    font-size:57px;
+    font-weight:400;
 }
 
-.mensagem {
-    font-family: "Roboto";
-    font-size: 57.38px;
-    font-weight: 400;
+.mensagem span{
+    color:#3347B0;
 }
 
-.mensagem span {
-    color: #3347B0;
+.mulher img{
+    width:400px;
 }
 
-.mulher img {
-    width: 400px;
+.computadores{
+    width:350px;
 }
 
-.computadores {
-    width: 350px;
+.computadores img{
+    height:436px;
 }
 
-.computadores img {
-    height: 436px;
+.cursos{
+    display:flex;
+    flex-direction:column;
+    gap:100px;
 }
 
-
-
-.cursos {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+.cursos button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:600px;
+    height:300px;
+    background-color:#3347B0;
+    color:white;
+    font-size:32px;
+    border-radius:6px;
+    cursor:pointer;
+    box-shadow:20px 20px 0px rgba(0,0,0,0.40);
+    border:none;
 }
 
-.cursos button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    width: 600px;
-    height: 300px;
-    background-color: #3347B0;
-    color: white;
-    font-size: 32px;
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.40);
+/* FOOTER */
+footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:1.5rem 10%;
+    background-color:#3347B0;
+    color:white;
 }
 
-.icone {
-    width: 96px;
-    height: 76.79px;
+.contatos{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 1.5rem 10%;
-    background-color: #3347B0;
-    color: white;   
+.item{
+    display:flex;
+    align-items:center;
+    gap:20px;
 }
 
-.contatos span{
-     font-family: "Roboto";
+.redes_sociais{
+    display:flex;
+    gap:20px;
 }
 
-.redes_sociais {
-    display: flex;
-    gap: 20px;
+.autor{
+    font-size:14px;
 }
 
-.item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+/* ===================== */
+/* TELA 2 - ALUNOS */
+/* ===================== */
+.titulo-curso{
+    width:100%;
+    text-align:center;
+    font-size:64px;
+    color:#3347B0;
+    margin-top:40px;
 }
 
-.autor {
-    font-family: "Roboto";
-    size: 20px;
+.container-alunos{
+    display:grid;
+    grid-template-columns:repeat(5,250px);
+    padding-bottom: 100px;
+    gap:40px;
+    justify-content:center;
+    margin-top:80px;
 }
 
-.contatos {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.card-aluno{
+    background-color:#3347B0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    height:300px;
+    width:201px;
+    gap:50px;
+    box-shadow:8px 8px 0px rgba(0,0,0,0.20);
+    cursor:pointer;
 }
 
- .tela_2.active {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    
+.card-aluno:hover{
+    transform:scale(1.05);
 }
 
-
-.titulo-curso {
-    width: 100%;
-    text-align: center;
-    font-size: 64px;
-    font-family: "Roboto";
-    color: #3347B0;
-    margin-top: 40px;
+.card-aluno img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:white;
+    object-fit:cover;
 }
 
-.container-alunos {
-    display: grid;
-    grid-template-columns: repeat(5, 250px);
-    gap: 40px;
-    justify-content: center;
-    margin-top: 80px;
-}
-.card-aluno h2 {
-   font-family: "Poppins";
-     height: 54px;
-     width: 176px;
-     display: flex;
-     align-items: center;
-     color:aliceblue;
-     text-align: center;
+.card-aluno h2{
+    height:54px;
+    width:176px;
+    display:flex;
+    align-items:center;
+    color:white;
+    text-align:center;
+    font-size:18px;
 }
 
-.card-aluno:hover {
-    transform: scale(1.05);
-}
-  
-    
-
-.card-aluno {
-  background-color:#3347B0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 300px;
-    width: 201px;
-    gap: 50px;
-    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.20);
+/* ===================== */
+/* TELA 3 - PERFIL */
+/* ===================== */
+.borda{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:500px;
+    width:500px;
+    box-shadow:10px 10px 10px rgba(0,0,0,0.30);
 }
 
-.card-aluno img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: white;
-    object-fit: cover;
-}
-
-
-
-
-.tela3.active {
-    display: flex;
-    width: 100%;
-    height: 100%;
-   justify-content: space-around;
-   align-items: center;
-   position: absolute;
-  
-    
-}
 .aluno{
-    display: flex;
-    height: 500px ;
-    width: 500px;
-    justify-content: center;
-    background-color: aqua;
-    flex-direction: column;
-    align-items: center;
-   gap: 15px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    height:450px;
+    width:450px;
+    background-color:white;
 }
-.aluno img {
-    height: 300px ;
-    width: 300px;
+
+.aluno img{
+    height:280px;
+    width:280px;
+    border-radius:50%;
+    object-fit:cover;
 }
+
 .aluno span{
-     font-family: "Poppins";
-       color:aliceblue;
-       font-size: 25px;
-       color: #3347B0;
+    font-size:25px;
+    color:#3347B0;
 }
+
+/* ===================== */
+/* GRAFICO */
+/* ===================== */
 
 .grafico{
-    display: flex;
-    gap: 41px;
-    align-items: flex-end;
-    justify-content: center;
-    background-color: aqua;
-    height: 387px;
-    width: 359px;
-   
-}
-.borda {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 500px;
-    width: 500px;
-    background-color: #3347B0;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    gap:40px;
+    height:400px;
+    width:400px;
+    box-shadow:10px 10px 10px rgba(0,0,0,0.30);
 }
 
-
-.grafico {
-    display: flex;
-    gap: 25px;
-    align-items: flex-end; 
-    justify-content: center;
-    background-color: #f0f8ff; /* Cor clara de fundo do gráfico */
-    border: 2px solid #0099ff;
-    padding: 20px;
-    height: 350px;
+.coluna{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    height:100%;
+    gap:5px;
 }
 
-
-.coluna {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-    
+.preenchimento{
+    width:25px;
+    background-color:#3347B0;
+    box-shadow:10px 10px 10px rgba(0,0,0,0.30);
+    border-radius:12px; /* deixa a barra arredondada */
 }
 
-
-.barra {
-    width: 16px;
-    margin: 5px 0;
+.valor{
+    color:#3347B0;
+    border-radius:12px;
+    padding:3px 6px;  /* dá formato arredondado */
+    background-color: rgba(51,71,176,0.1);
+    font-weight:600;
 }
 
-
-
-
-.coluna span { 
-    font-weight: Poppins;
-     font-family: sans-serif; 
-     color: #2b44b1; 
-     font-size: 14px; 
+.legenda{
+    font-size:12px;
+    color:#3347B0;
+    text-align:center;
+    margin-top:3px; /* espaço entre barra e legenda */
+}*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:"Roboto";
 }
-.coluna h2 {
-     font-size: 12px;
-      font-family: sans-serif; 
-      color: #2b44b1; 
-      margin: 0; 
-    }
 
+/* ===================== */
+/* CONTROLE DAS TELAS */
+/* ===================== */
 
+.tela_1,
+.tela_2,
+.tela3{
+    display:none;
+}
 
+.tela_1.active{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:100px;
+    width:100%;
+    height:100%;
+}
+
+.tela_2.active{
+    display:flex;
+    width:100%;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+    gap:70px;
+}
+
+.tela3.active{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;    
+    gap: 40px;               
+    padding: 90px;
+}
+
+/* ===================== */
+/* BODY / HEADER / FOOTER */
+/* ===================== */
+
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 5%;
+    background-color:#3347B0;
+}
+
+.logo{
+    display:flex;
+    height:75px;
+    align-items:center;
+    gap:11px;
+}
+
+.logo h1{
+    color:white;
+}
+
+.logo img{
+    width:60px;
+    height:75px;
+}
+
+.sair,
+.voltar{
+    display:none;
+    margin-left:auto;
+    align-items:center;
+    gap:11px;
+    cursor:pointer;
+}
+
+.sair h1,
+.voltar h1{
+    color:white;
+}
+
+main{
+    flex:1;
+}
+
+/* ===================== */
+/* TELA 1 */
+/* ===================== */
+
+.lado-esquerdo{
+    display:flex;
+    flex-direction:column;
+    gap:200px;
+}
+
+.mensagem{
+    font-size:57px;
+    font-weight:400;
+}
+
+.mensagem span{
+    color:#3347B0;
+}
+
+.mulher img{
+    width:400px;
+}
+
+.computadores{
+    width:350px;
+}
+
+.computadores img{
+    height:436px;
+}
+
+.cursos{
+    display:flex;
+    flex-direction:column;
+    gap:100px;
+}
+
+.cursos button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:600px;
+    height:300px;
+    background-color:#3347B0;
+    color:white;
+    font-size:32px;
+    border-radius:6px;
+    cursor:pointer;
+    box-shadow:20px 20px 0px rgba(0,0,0,0.40);
+    border:none;
+}
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+
+footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:1.5rem 10%;
+    background-color:#3347B0;
+    color:white;
+}
+
+.contatos{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.item{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.redes_sociais{
+    display:flex;
+    gap:20px;
+}
+
+.autor{
+    font-size:14px;
+}
+
+/* ===================== */
+/* TELA 2 - ALUNOS */
+/* ===================== */
+
+.titulo-curso{
+    width:100%;
+    text-align:center;
+    font-size:64px;
+    color:#3347B0;
+    margin-top:40px;
+}
+
+.container-alunos{
+    display:grid;
+    grid-template-columns:repeat(5,250px);
+    padding-bottom: 100px;
+    gap:40px;
+    justify-content:center;
+    margin-top:80px;
+}
+
+.card-aluno{
+    background-color:#3347B0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    height:300px;
+    width:201px;
+    gap:50px;
+    box-shadow:8px 8px 0px rgba(0,0,0,0.20);
+    cursor:pointer;
+}
+
+.card-aluno:hover{
+    transform:scale(1.05);
+}
+
+.card-aluno img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:white;
+    object-fit:cover;
+}
+
+.card-aluno h2{
+    height:54px;
+    width:176px;
+    display:flex;
+    align-items:center;
+    color:white;
+    text-align:center;
+    font-size:18px;
+}
+
+/* ===================== */
+/* TELA 3 - PERFIL */
+/* ===================== */
+
+.borda{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:500px;
+    width:500px;
+    box-shadow:10px 10px 10px rgba(0,0,0,0.30);
+}
+
+.aluno{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    height:450px;
+    width:450px;
+    background-color:white;
+}
+
+.aluno img{
+    height:280px;
+    width:280px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.aluno span{
+    font-size:25px;
+    color:#3347B0;
+}
+
+/* ===================== */
+/* GRAFICO */
+/* ===================== */
+
+.grafico{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    gap:40px;
+    height:400px;
+    padding-bottom:40px; /* espaço para nomes */
+    box-shadow:10px 10px 10px rgba(0,0,0,0.30);
+}
+
+.coluna{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    gap:5px; /* espaço entre valor, barra e legenda */
+}
+
+.preenchimento{
+    width:25px;
+    background-color:#3347B0;
+    border-radius: 8px; /* deixa as barras arredondadas */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.valor{
+    color: #3347B0;
+    font-weight:bold;
+    border-radius: 12px;
+}
+
+.legenda{
+    font-size:12px;
+    color:#3347B0;
+    text-align:center;
+    margin-top:5px; /* garante espaço embaixo da barra */
+}

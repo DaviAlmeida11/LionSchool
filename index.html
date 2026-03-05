@@ -1,137 +1,123 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tela1.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="app.js" defer></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="tela1.css">
+<script src="app.js" defer></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<title>Lion School</title>
 </head>
 
 <body>
-    <header>
 
-        <div class="logo ">
-            <img src="img/lion.png" alt="leao">
-            <h1>Lion School</h1>
-        </div>
+<header>
 
-
-        <div class="sair ">
-            <img src="img/portaSaida.png" alt="sair">
-            <h1>Sair</h1>
-        </div>
-
-        <div class="voltar">
-            <img src="img/portaSaida.png" alt="voltar">
-             <h1>voltar</h1>
-
-    </header>
-    <main>
-
-        <div class="tela3 ">
-           <div class="aluno">
-            <img src="img/ads.svg" alt="aluno">
-            <span>ALuno nome </span>
-           </div>
-          <div class="borda">
-    <div class="grafico">
-  
-  <div class="coluna">
-    <span>90</span>
-    <div class="barra sop"></div>
-    <p>SOP</p>
-  </div>
-
-  <div class="coluna">
-    <span class="alerta">30</span>
-    <div class="barra ipr"></div>
-    <p class="alerta">IPR</p>
-  </div>
-  
-  <div class="coluna">
-    <span class="atencao">50</span>
-    <div class="barra lima"></div>
-    <p class="atencao">LIMA</p>
-  </div>
-
-  <div class="coluna">
-    <span>90</span>
-    <div class="barra bd"></div>
-    <p>BD</p>
-  </div>
-
-</div>
-</div>
-        </div>
-
-
-       <div class="tela_2  ">
-    <div id="tela2"></div>
+<div class="logo">
+<img src="img/lion.png">
+<h1>Lion School</h1>
 </div>
 
-        <div class="tela_1 active">
-                <div class="lado-esquerdo">
-                    <div class="mensagem">
-                        <h1>Escolha um <span>curso</span><br>para gerenciar</h1>
-                    </div>
+<div class="sair">
+<img src="img/portaSaida.png">
+<h1>Sair</h1>
+</div>
 
-                    <div class="computadores">
-                        <img src="img/computadores.svg" alt="Computadores">
-                    </div>
-                </div>
-                <div class="mulher">
-                    <img src="img/studant.svg" alt="mulher">
-                </div>
+<div class="voltar">
+<img src="img/portaSaida.png">
+<h1>Voltar</h1>
+</div>
 
-                <div class="cursos" id="cursos">
-                   
-                </div>
+</header>
+
+<main>
+
+<!-- TELA 1 -->
+<div class="tela_1 active">
+
+<div class="lado-esquerdo">
+
+<div class="mensagem">
+<h1>Escolha um <span>curso</span><br>para gerenciar</h1>
+</div>
+
+<div class="computadores">
+<img src="img/computadores.svg">
+</div>
+
+</div>
+
+<div class="mulher">
+<img src="img/studant.svg">
+</div>
+
+<div class="cursos" id="cursos"></div>
+
+</div>
+
+
+<!-- TELA 2 -->
+<div class="tela_2">
+<div id="tela2"></div>
+</div>
+
+
+<!-- TELA 3 -->
+<section class="tela3">
+
+    <div class="borda">
+        <div class="aluno" id="boxPerfil">
         </div>
-    </main>
+    </div>
 
+    <div class="grafico" id="boxEstatisticas">
+    </div>
 
-    </main>
-    <footer>
-        <div class="contatos">
-            <div class="item">
-                <img src="img/telefone.png" alt="telefone">
-                <span>(11) 4774-4700</span>
-            </div>
-            <div class="item">
-                <img src="img/email.png" alt="email">
-                <span>lionschool@gmail.com</span>
-            </div>
-            <div class="item">
-                <img src="img/local.png" alt="local">
-                <span>Rua tcc, 211, Centro, Jandira</span>
-            </div>
-        </div>
-        <div class="autor">
-            <h2>Copyright © 2022 | Davi de Almeida</h2>
-        </div>
-        <div class="redes_sociais">
-            <div class="item">
-                <img src="img/yotube.png" alt="yotube">
-            </div>
-            <div class="item">
-                <img src="img/twitter.png" alt="x">
-            </div>
-            <div class="item">
-                <img src="img/instagram.png" alt="instagram">
-            </div>
-            <div class="item">
-                <img src="img/facebook.png" alt="facebook">
-            </div>
+</section>
+</main>
 
-        </div>
-    </footer>
+<footer>
+
+<div class="contatos">
+
+<div class="item">
+<img src="img/telefone.png">
+<span>(11) 4774-4700</span>
+</div>
+
+<div class="item">
+<img src="img/email.png">
+<span>lionschool@gmail.com</span>
+</div>
+
+<div class="item">
+<img src="img/local.png">
+<span>Rua tcc, 211, Centro, Jandira</span>
+</div>
+
+</div>
+
+<div class="autor">
+<h2>Copyright © 2022 | Davi de Almeida</h2>
+</div>
+
+<div class="redes_sociais">
+
+<div class="item"><img src="img/yotube.png"></div>
+<div class="item"><img src="img/twitter.png"></div>
+<div class="item"><img src="img/instagram.png"></div>
+<div class="item"><img src="img/facebook.png"></div>
+
+</div>
+
+</footer>
 
 </body>
-
 </html>
